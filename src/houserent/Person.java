@@ -21,7 +21,13 @@ public abstract class Person {
 		this.request = request;
 	}
 	public void makeRequest(HouseType type){
-		RentSystem.getInstance().makeRequest(this,type);
+		if (this.request==null) {
+			RentSystem.getInstance().makeRequest(this,type);
+		}
+		else {
+			System.out.println("Already requested!");
+		}
+		
 	}
 	public PersonType getType() {
 		return type;

@@ -59,7 +59,7 @@ public class RentSystem {
 		if (house!=null) {
 			house.acceptRequest(request);
 			request.setHouse(house);
-			System.out.println("arrange house for"+request.getPerson().getName()+", which is a "+request.getHouse().getName());
+			System.out.println("arrange house for "+request.getPerson().getName()+", which is a "+request.getHouse().getName());
 		}
 		else {
 			System.out.println("No house available");
